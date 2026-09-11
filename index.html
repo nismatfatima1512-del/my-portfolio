@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Me!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at top left, #1e1e2f, #0f0f18);
+            color: #ffffff;
+            padding: 20px;
+        }
+        .portfolio-card {
+           background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 480px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        }
+        .portfolio-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+        }
+        .profile-img-container {
+            position: relative;
+            width: 130px;
+            height: 130px;
+            margin: 0 auto 20px auto;
+        }
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #6c5ce7;
+            box-shadow: 0 0 20px rgba(108, 92, 231, 0.4);
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #a29bfe, #6c5ce7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 0.5px;
+        }
+        p.intro {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: #d1d8e0;
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+        p.details {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #a5b1c2;
+            margin-bottom: 28px;
+        }
+        .portfolio-link {
+            display: inline-block;
+            padding: 12px 28px;
+            background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
+        }
+        .portfolio-link:hover {
+            opacity: 0.9;
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(108, 92, 231, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="portfolio-card">
+        <div class="profile-img-container">
+            <img class="profile-img" src="WhatsApp Image 2026-09-11 at 6.46.12 AM.jpeg" alt="Profile Picture">
+        </div>
+
+        <h1>Nismat Fatima</h1>
+
+        <p class="intro">9th Grade Student | Learner</p>
+        <p class="details">I'm a 9th grade student who loves learning about technology and web development. I enjoy exploring new ideas, learning new skills, and working on interesting projects.</p>
+
+        <!-- 4. Link -->
+        <a href="https://github.com/nismatfatima1512-del" target="_blank" class="portfolio-link">Explore My Projects</a>
+    </div>
+</body>
+</html>
